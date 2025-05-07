@@ -20,7 +20,7 @@ This project applies Hexagonal Architecture principles in the following way:
 
 ### 1. **Feature Separation**
    - The first step is to separate the application by features. Each feature is self-contained, and within each feature, we apply the principles of Hexagonal Architecture.
-   - The feature app example is: "products"
+   - The feature app example is: **"products"**
 
 ### 2. **Domain Layer**
    - Located in `src/app/features/products/modules/domain/`.
@@ -45,7 +45,7 @@ This project applies Hexagonal Architecture principles in the following way:
 
 ### 7. **Services Layer**
    - Located in `src/app/features/products/services/`.
-   - The service implements the `ProductRepository` interface in an agnostic way, meaning it does not depend on any specific implementation. This ensures that if we change the implementation in the future, we only need to update the infrastructure layer without modifying the component or the service itself.
+   - The service implements the `ProductRepository` interface in an **agnostic** way, meaning it does not depend on any specific implementation. This ensures that if we change the implementation in the future, we only need to update the infrastructure layer without modifying the component or the service itself.
 
 ### 8. **How to Change Service Implementations in the Component**
    - To change the service implementation used in a component, update the `providers` array in the component's metadata. For example, in the `ProductComponent`, you can specify which implementation of the `ProductRepository` interface to use:
