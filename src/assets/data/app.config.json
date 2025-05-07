@@ -1,0 +1,11 @@
+{
+  "appName": "Hexagonal architecture app",
+  "api": {
+    "dummyjson": {
+      "url": "https://dummyjson.com",
+      "methods": {
+        "products": "products"
+      }
+    }
+  }
+}

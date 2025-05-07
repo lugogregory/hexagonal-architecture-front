@@ -1,0 +1,8 @@
+<h1>{{ (appConfig$ | async)?.appName }}</h1>
+
+<h2>Product list:</h2>
+<ul>
+  @for (product of (products$ | async)?.products; track product.id) {
+  <li>{{ product.title }}</li>
+  }
+</ul>
